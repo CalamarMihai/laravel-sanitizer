@@ -14,7 +14,7 @@
     "license": "MIT",
     "authors": [{
         "name": "Calamar Ionut Mihai",
-        "email": ""
+        "email": "calamarmihai@gmail.com"
     }],
     "require": {
         "illuminate/support": "^8.0|^9.0",
