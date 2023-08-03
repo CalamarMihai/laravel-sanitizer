@@ -1,9 +1,9 @@
 <?php
 
-namespace BinaryCats\Sanitizer\Laravel;
+namespace BWS\Sanitizer\Laravel;
 
-use BinaryCats\Sanitizer\Contracts\Filter;
-use BinaryCats\Sanitizer\Sanitizer;
+use BWS\Sanitizer\Contracts\Filter;
+use BWS\Sanitizer\Sanitizer;
 use Closure;
 use InvalidArgumentException;
 
@@ -56,7 +56,7 @@ class Factory
         }
 
         if (! ($customFilter instanceof Closure) && ! in_array(Filter::class, class_implements($customFilter))) {
-            throw new InvalidArgumentException('Custom filter must be a Closure or a class implementing the BinaryCats\Sanitizer\Contracts\Filter interface.');
+            throw new InvalidArgumentException('Custom filter must be a Closure or a class implementing the BWS\Sanitizer\Contracts\Filter interface.');
         }
 
         $this->customFilters[$name] = $customFilter;

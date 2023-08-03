@@ -31,7 +31,7 @@ Given a data array with the following format:
 We can easily format it using our Sanitizer and the some of Sanitizer's default filters:
 ```php
 
-    use BinaryCats\Sanitizer\Sanitizer;
+    use BWS\Sanitizer\Sanitizer;
 
     $filters = [
         'first_name'    =>  'trim|escape|capitalize',
@@ -87,10 +87,10 @@ The following filters are available out of the box:
 
 ## Adding custom filters
 
-You can add your own filters by passing a custom filter array to the Sanitize constructor as the third parameter. For each filter name, either a closure or a full classpath to a Class implementing the `BinaryCats\Sanitizer\Contracts\Filter` interface must be provided.
+You can add your own filters by passing a custom filter array to the Sanitize constructor as the third parameter. For each filter name, either a closure or a full classpath to a Class implementing the `BWS\Sanitizer\Contracts\Filter` interface must be provided.
 ```php
 
-use BinaryCats\Sanitizer\Contracts\Filter;
+use BWS\Sanitizer\Contracts\Filter;
 
 class RemoveStringsFilter implements Filter
 {
@@ -137,12 +137,12 @@ If you prefer to do that manually, you need to add the values to your `config/ap
 ```php
     'providers' => [
         ...
-        BinaryCats\Sanitizer\Laravel\SanitizerServiceProvider::class,
+        BWS\Sanitizer\Laravel\SanitizerServiceProvider::class,
     ];
 
     'aliases' => [
         ...
-        'Sanitizer' => BinaryCats\Sanitizer\Laravel\Facade::class,
+        'Sanitizer' => BWS\Sanitizer\Laravel\Facade::class,
     ];
 ```
 
@@ -165,7 +165,7 @@ You may also Sanitize input in your own FormRequests by using the SanitizesInput
     namespace App\Http\Requests;
 
     use App\Http\Requests\Request;
-    use BinaryCats\Sanitizer\Laravel\SanitizesInput;
+    use BWS\Sanitizer\Laravel\SanitizesInput;
 
     class SanitizedRequest extends Request
     {

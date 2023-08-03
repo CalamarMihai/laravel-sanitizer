@@ -1,8 +1,8 @@
 <?php
 
-namespace BinaryCats\Sanitizer\Filters;
+namespace BWS\Sanitizer\Filters;
 
-use BinaryCats\Sanitizer\Contracts\Filter;
+use BWS\Sanitizer\Contracts\Filter;
 use Illuminate\Support\Collection;
 
 class Cast implements Filter

@@ -1,8 +1,8 @@
 <?php
 
-namespace BinaryCats\Sanitizer\Filters;
+namespace BWS\Sanitizer\Filters;
 
-use BinaryCats\Sanitizer\Contracts\Filter;
+use BWS\Sanitizer\Contracts\Filter;
 
 class Uppercase implements Filter
 {

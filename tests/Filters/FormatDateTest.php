@@ -1,6 +1,6 @@
 <?php
 
-use BinaryCats\Sanitizer\Sanitizer;
+use BWS\Sanitizer\Sanitizer;
 use PHPUnit\Framework\TestCase;
 
 class FormatDateTest extends TestCase

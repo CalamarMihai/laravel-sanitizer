@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryCats\Sanitizer;
+namespace BWS\Sanitizer;
 
 use Closure;
 use Illuminate\Support\Arr;
@@ -30,16 +30,16 @@ class Sanitizer
      *  @var array
      */
     protected $filters = [
-        'capitalize'  => \BinaryCats\Sanitizer\Filters\Capitalize::class,
-        'cast'        => \BinaryCats\Sanitizer\Filters\Cast::class,
-        'escape'      => \BinaryCats\Sanitizer\Filters\EscapeHTML::class,
-        'format_date' => \BinaryCats\Sanitizer\Filters\FormatDate::class,
-        'lowercase'   => \BinaryCats\Sanitizer\Filters\Lowercase::class,
-        'uppercase'   => \BinaryCats\Sanitizer\Filters\Uppercase::class,
-        'trim'        => \BinaryCats\Sanitizer\Filters\Trim::class,
-        'strip_tags'  => \BinaryCats\Sanitizer\Filters\StripTags::class,
-        'digit'       => \BinaryCats\Sanitizer\Filters\Digit::class,
-        'filter_if'   => \BinaryCats\Sanitizer\Filters\FilterIf::class,
+        'capitalize'  => \BWS\Sanitizer\Filters\Capitalize::class,
+        'cast'        => \BWS\Sanitizer\Filters\Cast::class,
+        'escape'      => \BWS\Sanitizer\Filters\EscapeHTML::class,
+        'format_date' => \BWS\Sanitizer\Filters\FormatDate::class,
+        'lowercase'   => \BWS\Sanitizer\Filters\Lowercase::class,
+        'uppercase'   => \BWS\Sanitizer\Filters\Uppercase::class,
+        'trim'        => \BWS\Sanitizer\Filters\Trim::class,
+        'strip_tags'  => \BWS\Sanitizer\Filters\StripTags::class,
+        'digit'       => \BWS\Sanitizer\Filters\Digit::class,
+        'filter_if'   => \BWS\Sanitizer\Filters\FilterIf::class,
     ];
 
     /**

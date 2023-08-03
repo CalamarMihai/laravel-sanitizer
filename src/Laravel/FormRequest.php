@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryCats\Sanitizer\Laravel;
+namespace BWS\Sanitizer\Laravel;
 
 use Illuminate\Foundation\Http\FormRequest as LaravelFormRequest;
 

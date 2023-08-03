@@ -1,8 +1,8 @@
 {
-    "name": "binary-cats/sanitizer",
+    "name": "bws/laravel-request-sanitizer",
     "description": "Data sanitizer and Laravel form requests with input sanitation.",
     "keywords": [
-        "binary cats",
+        "bws",
         "input filter",
         "input sanitation",
         "input sanitizer",
@@ -13,8 +13,8 @@
     ],
     "license": "MIT",
     "authors": [{
-        "name": "Cyrill Kalita",
-        "email": "cyrill.kalita@gmail.com"
+        "name": "Calamar Ionut Mihai",
+        "email": "calamarmihai@gmail.com"
     }],
     "require": {
         "illuminate/support": "^8.0|^9.0",
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BinaryCats\\Sanitizer\\": "src/"
+            "BWS\\Sanitizer\\": "src/"
         }
     },
     "autoload-dev": {
@@ -35,10 +35,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BinaryCats\\Sanitizer\\Laravel\\SanitizerServiceProvider"
+                "BWS\\Sanitizer\\Laravel\\SanitizerServiceProvider"
             ],
             "aliases": {
-                "Sanitizer": "BinaryCats\\Sanitizer\\Laravel\\Facade"
+                "Sanitizer": "BWS\\Sanitizer\\Laravel\\Facade"
             }
         }
     },

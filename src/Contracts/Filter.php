@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryCats\Sanitizer\Contracts;
+namespace BWS\Sanitizer\Contracts;
 
 interface Filter
 {
