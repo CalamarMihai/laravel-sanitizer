@@ -1,9 +1,9 @@
 <?php
 
-namespace calamar-mihai\Sanitizer\Laravel;
+namespace BWS\Sanitizer\Laravel;
 
-use calamar-mihai\Sanitizer\Contracts\Filter;
-use calamar-mihai\Sanitizer\Sanitizer;
+use BWS\Sanitizer\Contracts\Filter;
+use BWS\Sanitizer\Sanitizer;
 use Closure;
 use InvalidArgumentException;
 
@@ -56,7 +56,7 @@ class Factory
         }
 
         if (! ($customFilter instanceof Closure) && ! in_array(Filter::class, class_implements($customFilter))) {
-            throw new InvalidArgumentException('Custom filter must be a Closure or a class implementing the calamar-mihai\Sanitizer\Contracts\Filter interface.');
+            throw new InvalidArgumentException('Custom filter must be a Closure or a class implementing the BWS\Sanitizer\Contracts\Filter interface.');
         }
 
         $this->customFilters[$name] = $customFilter;

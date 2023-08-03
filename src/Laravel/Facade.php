@@ -1,6 +1,6 @@
 <?php
 
-namespace calamar-mihai\Sanitizer\Laravel;
+namespace BWS\Sanitizer\Laravel;
 
 use Illuminate\Support\Facades\Facade as LaravelFacade;
 

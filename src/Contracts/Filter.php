@@ -1,6 +1,6 @@
 <?php
 
-namespace calamar-mihai\Sanitizer\Contracts;
+namespace BWS\Sanitizer\Contracts;
 
 interface Filter
 {

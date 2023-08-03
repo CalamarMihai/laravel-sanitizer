@@ -1,6 +1,6 @@
 <?php
 
-use calamar-mihai\Sanitizer\Sanitizer;
+use BWS\Sanitizer\Sanitizer;
 use PHPUnit\Framework\TestCase;
 
 class EscapeHTMLTest extends TestCase

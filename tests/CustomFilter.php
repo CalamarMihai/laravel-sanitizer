@@ -1,6 +1,6 @@
 <?php
 
-use calamar-mihai\Sanitizer\Contracts\Filter;
+use BWS\Sanitizer\Contracts\Filter;
 
 class CustomFilter implements Filter
 {

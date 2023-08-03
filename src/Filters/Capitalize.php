@@ -1,8 +1,8 @@
 <?php
 
-namespace calamar-mihai\Sanitizer\Filters;
+namespace BWS\Sanitizer\Filters;
 
-use calamar-mihai\Sanitizer\Contracts\Filter;
+use BWS\Sanitizer\Contracts\Filter;
 
 class Capitalize implements Filter
 {
