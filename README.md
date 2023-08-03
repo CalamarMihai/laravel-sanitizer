@@ -31,7 +31,7 @@ Given a data array with the following format:
 We can easily format it using our Sanitizer and the some of Sanitizer's default filters:
 ```php
 
-    use BWS\Sanitizer\Sanitizer;
+    use calamar-mihai\Sanitizer\Sanitizer;
 
     $filters = [
         'first_name'    =>  'trim|escape|capitalize',
@@ -87,10 +87,10 @@ The following filters are available out of the box:
 
 ## Adding custom filters
 
-You can add your own filters by passing a custom filter array to the Sanitize constructor as the third parameter. For each filter name, either a closure or a full classpath to a Class implementing the `BWS\Sanitizer\Contracts\Filter` interface must be provided.
+You can add your own filters by passing a custom filter array to the Sanitize constructor as the third parameter. For each filter name, either a closure or a full classpath to a Class implementing the `calamar-mihai\Sanitizer\Contracts\Filter` interface must be provided.
 ```php
 
-use BWS\Sanitizer\Contracts\Filter;
+use calamar-mihai\Sanitizer\Contracts\Filter;
 
 class RemoveStringsFilter implements Filter
 {
@@ -137,12 +137,12 @@ If you prefer to do that manually, you need to add the values to your `config/ap
 ```php
     'providers' => [
         ...
-        BWS\Sanitizer\Laravel\SanitizerServiceProvider::class,
+        calamar-mihai\Sanitizer\Laravel\SanitizerServiceProvider::class,
     ];
 
     'aliases' => [
         ...
-        'Sanitizer' => BWS\Sanitizer\Laravel\Facade::class,
+        'Sanitizer' => calamar-mihai\Sanitizer\Laravel\Facade::class,
     ];
 ```
 
@@ -165,7 +165,7 @@ You may also Sanitize input in your own FormRequests by using the SanitizesInput
     namespace App\Http\Requests;
 
     use App\Http\Requests\Request;
-    use BWS\Sanitizer\Laravel\SanitizesInput;
+    use calamar-mihai\Sanitizer\Laravel\SanitizesInput;
 
     class SanitizedRequest extends Request
     {

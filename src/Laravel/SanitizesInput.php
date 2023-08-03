@@ -1,6 +1,6 @@
 <?php
 
-namespace BWS\Sanitizer\Laravel;
+namespace calamar-mihai\Sanitizer\Laravel;
 
 trait SanitizesInput
 {

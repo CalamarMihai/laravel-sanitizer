@@ -1,6 +1,6 @@
 <?php
 
-use BWS\Sanitizer\Sanitizer;
+use calamar-mihai\Sanitizer\Sanitizer;
 use PHPUnit\Framework\TestCase;
 
 class LowercaseTest extends TestCase

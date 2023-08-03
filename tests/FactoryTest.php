@@ -1,7 +1,7 @@
 <?php
 
-use BWS\Sanitizer\Laravel\Factory;
-use BWS\Sanitizer\Sanitizer;
+use calamar-mihai\Sanitizer\Laravel\Factory;
+use calamar-mihai\Sanitizer\Sanitizer;
 use PHPUnit\Framework\TestCase;
 
 class FactoryTest extends TestCase
@@ -9,12 +9,12 @@ class FactoryTest extends TestCase
     public function sanitize($data, $rules)
     {
         $sanitizer = new Sanitizer($data, $rules, [
-            'capitalize'  => \BWS\Sanitizer\Filters\Capitalize::class,
-            'escape'      => \BWS\Sanitizer\Filters\EscapeHTML::class,
-            'format_date' => \BWS\Sanitizer\Filters\FormatDate::class,
-            'lowercase'   => \BWS\Sanitizer\Filters\Lowercase::class,
-            'uppercase'   => \BWS\Sanitizer\Filters\Uppercase::class,
-            'trim'        => \BWS\Sanitizer\Filters\Trim::class,
+            'capitalize'  => \calamar-mihai\Sanitizer\Filters\Capitalize::class,
+            'escape'      => \calamar-mihai\Sanitizer\Filters\EscapeHTML::class,
+            'format_date' => \calamar-mihai\Sanitizer\Filters\FormatDate::class,
+            'lowercase'   => \calamar-mihai\Sanitizer\Filters\Lowercase::class,
+            'uppercase'   => \calamar-mihai\Sanitizer\Filters\Uppercase::class,
+            'trim'        => \calamar-mihai\Sanitizer\Filters\Trim::class,
         ]);
 
         return $sanitizer->sanitize();

@@ -1,5 +1,5 @@
 {
-    "name": "bws/laravel-request-sanitizer",
+    "name": "calamarmihai/laravel-request-sanitizer",
     "description": "Data sanitizer and Laravel form requests with input sanitation.",
     "keywords": [
         "bws",
@@ -14,7 +14,7 @@
     "license": "MIT",
     "authors": [{
         "name": "Calamar Ionut Mihai",
-        "email": "calamarmihai@gmail.com"
+        "email": ""
     }],
     "require": {
         "illuminate/support": "^8.0|^9.0",

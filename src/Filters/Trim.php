@@ -1,8 +1,8 @@
 <?php
 
-namespace BWS\Sanitizer\Filters;
+namespace calamar-mihai\Sanitizer\Filters;
 
-use BWS\Sanitizer\Contracts\Filter;
+use calamar-mihai\Sanitizer\Contracts\Filter;
 
 class Trim implements Filter
 {
